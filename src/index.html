@@ -4,13 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>Header</header>
-    <main>Main</main>
-    <footer>Footer</footer>
-    <script src="./js/index.js"></script>
+    <header>
+      <!-- Menu -->
+      <a href="#nav-open" title="Open Menu" aria-label="Open Menu">
+        <svg
+          width="1.5rem"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M29 16a2 2 0 01-2 2H11a2 2 0 010-4h16a2 2 0 012 2zm0-10a2 2 0 01-2 2H11a2 2 0 010-4h16a2 2 0 012 2zm0 20a2 2 0 01-2 2H11a2 2 0 010-4h16a2 2 0 012 2zM3 6c0 1.103.897 2 2 2s2-.897 2-2-.897-2-2-2-2 .897-2 2zm0 10c0 1.103.897 2 2 2s2-.897 2-2-.897-2-2-2-2 .897-2 2zm0 10c0 1.103.897 2 2 2s2-.897 2-2-.897-2-2-2-2 .897-2 2z"
+          />
+        </svg>
+      </a>
+
+      <!-- Logo -->
+      <a href="/">
+        <svg
+          width="1.5rem"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 40 40"
+        >
+          <defs />
+          <g fill="currentColor" fill-rule="evenodd">
+            <path
+              d="M26.996 38.215a5.855 5.855 0 005.102-2.927l3.528-6.053 3.476-6.12.113-.204A5.91 5.91 0 0040 19.994c0-1.027-.28-2.055-.812-2.97a5.845 5.845 0 00-5.101-2.934h-2.378l-2.203 3.812h4.58c1.084 0 1.625.726 1.807 1.039a2.014 2.014 0 01.14.291 2.033 2.033 0 01-.127 1.792l-.04.068-3.542 6.242-3.518 6.032c-.547.937-1.446 1.038-1.808 1.038-.365-.001-1.266-.104-1.81-1.045l-8.253-14.28H12.53l9.357 16.188a5.84 5.84 0 005.099 2.948l.01.588v-.588z"
+            />
+            <path
+              d="M7.847 10.975l1.12 1.939h4.402L11.145 9.06c-.562-.977-.138-1.846.006-2.09.124-.218.621-.958 1.635-1.032.07-.009.13-.009.172-.009h14.08c1.124 0 1.67.802 1.811 1.048.14.237.566 1.11-.001 2.09l-2.9 5.022h-.003l-2.88 4.989h-.004l-2.383 4.127 2.201 3.809 9.27-16.04c.526-.908.803-1.93.803-2.954a5.919 5.919 0 00-.8-2.95 5.842 5.842 0 00-5.114-2.953h-14.08A5.842 5.842 0 007.845 5.07a5.844 5.844 0 00.002 5.904"
+            />
+            <path
+              d="M17.16 36.506a5.94 5.94 0 00.945-1.232l.007-.014 1.207-2.087-2.2-3.806-2.308 3.991a2.264 2.264 0 01-.328.435l-.008.01c-.543.542-1.212.6-1.474.6-.328 0-1.148-.085-1.704-.875a1.351 1.351 0 01-.089-.136l-.029-.046-3.488-5.979-3.599-6.342c-.551-.978-.128-1.845.015-2.088.14-.24.689-1.035 1.804-1.035h16.475l2.2-3.812H5.912A5.846 5.846 0 00.81 17.024a5.845 5.845 0 00-.03 5.882l3.608 6.362c.737 1.263 1.332 2.288 1.816 3.123 2.031 3.498 2.081 3.576 2.7 4.183a5.862 5.862 0 004.098 1.641l.01.588-.001-.588a5.83 5.83 0 004.15-1.71"
+            />
+          </g>
+        </svg>
+      </a>
+
+      <!-- Navigation -->
+      <nav id="nav-open">
+        <a href="#_" title="Close Menu" aria-label="Close Menu">
+          <svg
+            width="1.5rem"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M443.6 387.1L312.4 255.4l131.5-130c5.4-5.4 5.4-14.2 0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4-3.7 0-7.2 1.5-9.8 4L256 197.8 124.9 68.3c-2.6-2.6-6.1-4-9.8-4-3.7 0-7.2 1.5-9.8 4L68 105.9c-5.4 5.4-5.4 14.2 0 19.6l131.5 130L68.4 387.1c-2.6 2.6-4.1 6.1-4.1 9.8 0 3.7 1.4 7.2 4.1 9.8l37.4 37.6c2.7 2.7 6.2 4.1 9.8 4.1 3.5 0 7.1-1.3 9.8-4.1L256 313.1l130.7 131.1c2.7 2.7 6.2 4.1 9.8 4.1 3.5 0 7.1-1.3 9.8-4.1l37.4-37.6c2.6-2.6 4.1-6.1 4.1-9.8-.1-3.6-1.6-7.1-4.2-9.7z"
+            />
+          </svg>
+        </a>
+
+        <a href="/"> Home </a>
+        <a href="/blog">Blog</a>
+        <a href="/about">Link</a>
+        <a href="/about">Some Link</a>
+        <a href="/manifesto">Manifesto</a>
+      </nav>
+    </header>
+
+    <!-- Not of interest -->
+    <main>
+      <article style="margin-top: calc(var(--hit-area) * 2 + 1.5rem)">
+        <img
+          src="https://freefrontend.com/assets/img/css-hero-effects/css-stripe-hero.png"
+          style="display: block; max-width: 100%; width: 100%"
+          height="600"
+        />
+        <p style="margin-top: 2rem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          sequi eos provident! Placeat autem corrupti neque dignissimos vero
+          culpa voluptatem accusamus dolorem suscipit eaque ea, nemo explicabo
+          in consequuntur optio fugiat dolorum ab maxime! Explicabo, voluptates
+          reprehenderit alias doloribus totam dolores praesentium eveniet
+          voluptate et harum possimus suscipit minima accusantium eos dolorum
+          pariatur mollitia dolor porro laudantium molestias tenetur cum? Sed
+          voluptatum reiciendis ex iste, esse ut? Quaerat nam, necessitatibus
+          enim mollitia eos recusandae earum animi facilis, repellendus corporis
+          quas labore. Dolorem quae ducimus alias, a pariatur repellat
+          distinctio voluptatum sequi velit eius ad quisquam, vero tenetur,
+          cupiditate dignissimos ipsum?
+        </p>
+
+        <p style="margin-top: 2rem" s>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          sequi eos provident! Placeat autem corrupti neque dignissimos vero
+          culpa voluptatem accusamus dolorem suscipit eaque ea, nemo explicabo
+          in consequuntur optio fugiat dolorum ab maxime! Explicabo, voluptates
+          reprehenderit alias doloribus totam dolores praesentium eveniet
+          voluptate et harum possimus suscipit minima accusantium eos dolorum
+          pariatur mollitia dolor porro laudantium molestias tenetur cum? Sed
+          voluptatum reiciendis ex iste, esse ut? Quaerat nam, necessitatibus
+          enim mollitia eos recusandae earum animi facilis, repellendus corporis
+          quas labore. Dolorem quae ducimus alias, a pariatur repellat
+          distinctio voluptatum sequi velit eius ad quisquam, vero tenetur,
+          cupiditate dignissimos ipsum?
+        </p>
+
+        <a
+          style="margin-top: 2rem"
+          href="https://infinum.com/handbook/books/frontend/git/configuration"
+          >Lorem ipsum dolor</a
+        >
+
+        <p style="margin-top: 2rem" s>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          sequi eos provident! Placeat autem corrupti neque dignissimos vero
+          culpa voluptatem accusamus dolorem suscipit eaque ea, nemo explicabo
+          in consequuntur optio fugiat dolorum ab maxime! Explicabo, voluptates
+          reprehenderit alias doloribus totam dolores praesentium eveniet
+          voluptate et harum possimus suscipit minima accusantium eos dolorum
+          pariatur mollitia dolor porro laudantium molestias tenetur cum? Sed
+          voluptatum reiciendis ex iste, esse ut? Quaerat nam, necessitatibus
+          enim mollitia eos recusandae earum animi facilis, repellendus corporis
+          quas labore. Dolorem quae ducimus alias, a pariatur repellat
+          distinctio voluptatum sequi velit eius ad quisquam, vero tenetur,
+          cupiditate dignissimos ipsum?
+        </p>
+      </article>
+    </main>
+    <footer style="text-align: center; padding: 5vmin 0">
+      ©Filip Jakov Bulic, 2021
+    </footer>
+    <script src="/js/index.js"></script>
   </body>
 </html>
