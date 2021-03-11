@@ -1,0 +1,24 @@
+{
+  "name": "the-amazing-header-showcase",
+  "version": "1.0.0",
+  "description": "Walkthrough of creating a header component for JS Standup",
+  "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "1.12.3",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "scripts": {
+    "dev": "parcel ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipjakov/the-amazing-header-showcase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filipjakov/the-amazing-header-showcase/issues"
+  },
+  "homepage": "https://github.com/filipjakov/the-amazing-header-showcase#readme"
+}
