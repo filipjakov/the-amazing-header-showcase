@@ -1,4 +1,4 @@
-# the-amazing-header-showcase
+# The Amazing Header Showcase
 
 Walkthrough of creating a header component for JS Standup
 
@@ -45,3 +45,5 @@ Walkthrough of creating a header component for JS Standup
 - IO (branch 3.5/sticky-io)
   - show styles (`top: -1px` trick)
   - show js
+
+![Header showcase](./src/assets/demo.mov)
