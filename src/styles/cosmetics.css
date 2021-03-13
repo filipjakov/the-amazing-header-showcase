@@ -1,0 +1,14 @@
+@media (prefers-reduced-motion: no-preference) {
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: currentColor wavy underline;
+
+  &:focus-visible {
+    outline: 0.2em dashed currentColor;
+  }
+}

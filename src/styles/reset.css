@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  /* -moz-osx-font-smoothing: grayscale; */
+  /* -webkit-text-size-adjust: 100%; */
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  /* https://css-tricks.com/custom-tailwind-css/#webkit-tap-highlight-color */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  &[class] {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

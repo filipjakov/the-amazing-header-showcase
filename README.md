@@ -24,3 +24,11 @@ Walkthrough of creating a header component for JS Standup
 - explain why the menu/close buttons are links and explain the `id`'s
 - explain `title` and `aria-label` on the links
 - explain the `_` on the close button link
+
+2. The Styles
+
+- basic colors and stuff
+- step by step coverage (header CSS)[./src/styles/index.css]
+- progressive enhancment: we got basic functionality with no js
+
+3. The Javascript
