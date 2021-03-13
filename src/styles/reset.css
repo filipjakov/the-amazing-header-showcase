@@ -44,9 +44,3 @@ textarea,
 select {
   font: inherit;
 }
-
-/* Custom */
-a:focus-visible {
-  outline-offset: 0.1875em;
-  outline: 0.1875em dashed currentColor;
-}

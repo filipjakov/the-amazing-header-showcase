@@ -29,8 +29,7 @@
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 40 40"
         >
-          <defs />
-          <g fill="currentColor" fill-rule="evenodd">
+          <g fill="var(--color-accent, currentColor)" fill-rule="evenodd">
             <path
               d="M26.996 38.215a5.855 5.855 0 005.102-2.927l3.528-6.053 3.476-6.12.113-.204A5.91 5.91 0 0040 19.994c0-1.027-.28-2.055-.812-2.97a5.845 5.845 0 00-5.101-2.934h-2.378l-2.203 3.812h4.58c1.084 0 1.625.726 1.807 1.039a2.014 2.014 0 01.14.291 2.033 2.033 0 01-.127 1.792l-.04.068-3.542 6.242-3.518 6.032c-.547.937-1.446 1.038-1.808 1.038-.365-.001-1.266-.104-1.81-1.045l-8.253-14.28H12.53l9.357 16.188a5.84 5.84 0 005.099 2.948l.01.588v-.588z"
             />
@@ -43,6 +42,9 @@
           </g>
         </svg>
       </a>
+
+      <!-- Overlay -->
+      <div class="overlay" onclick="document.location.hash = '#_'"></div>
 
       <!-- Navigation -->
       <nav id="nav-open">
@@ -68,13 +70,13 @@
 
     <!-- Not of interest -->
     <main>
-      <article style="margin-top: calc(var(--hit-area) * 2 + 1.5rem)">
+      <article>
         <img
           src="https://freefrontend.com/assets/img/css-hero-effects/css-stripe-hero.png"
           style="display: block; max-width: 100%; width: 100%"
           height="600"
         />
-        <p style="margin-top: 2rem">
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
           sequi eos provident! Placeat autem corrupti neque dignissimos vero
           culpa voluptatem accusamus dolorem suscipit eaque ea, nemo explicabo
@@ -89,7 +91,7 @@
           cupiditate dignissimos ipsum?
         </p>
 
-        <p style="margin-top: 2rem" s>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
           sequi eos provident! Placeat autem corrupti neque dignissimos vero
           culpa voluptatem accusamus dolorem suscipit eaque ea, nemo explicabo
@@ -104,13 +106,11 @@
           cupiditate dignissimos ipsum?
         </p>
 
-        <a
-          style="margin-top: 2rem"
-          href="https://infinum.com/handbook/books/frontend/git/configuration"
+        <a href="https://infinum.com/handbook/books/frontend/git/configuration"
           >Lorem ipsum dolor</a
         >
 
-        <p style="margin-top: 2rem" s>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
           sequi eos provident! Placeat autem corrupti neque dignissimos vero
           culpa voluptatem accusamus dolorem suscipit eaque ea, nemo explicabo
@@ -129,6 +129,7 @@
     <footer style="text-align: center; padding: 5vmin 0">
       ©Filip Jakov Bulic, 2021
     </footer>
+
     <script src="/js/index.js"></script>
   </body>
 </html>

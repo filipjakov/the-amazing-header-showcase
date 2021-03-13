@@ -3,6 +3,7 @@ const onHashChange = () => {
   const isOpen = document.location.hash === "#nav-open";
 
   document.body.classList.toggle("lock", isOpen);
+  document.querySelector(".overlay").classList.toggle("show", isOpen);
 
   isOpen
     ? document.querySelector('a[href="#_"]').focus()
@@ -15,6 +16,11 @@ window.addEventListener("hashchange", onHashChange, {
 
 // Why calling it initally?
 onHashChange();
+
+// Listen to escape click
+window.addEventListener("keyup", ({ code }) => {
+  if (code === "Escape") document.location.hash = "";
+});
 
 // Listen to media changes
 const onScreenMatch = ({ matches }) =>
