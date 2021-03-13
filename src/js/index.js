@@ -1,11 +1,13 @@
-// # Listen to escape click
+// # 3.1 Listen to escape click
 window.addEventListener("keyup", ({ code }) => {
   if (code === "Escape") document.location.hash = "";
 });
 
-// # Listen to hash changes
+// # 3.2 Listen to hash changes
 const onHashChange = () => {
   const isOpen = document.location.hash === "#nav-open";
+
+  document.body.classList.toggle("lock", isOpen); // added 3.3
 
   isOpen
     ? document.querySelector('a[href="#_"]').focus()
@@ -15,3 +17,17 @@ const onHashChange = () => {
 window.addEventListener("hashchange", onHashChange);
 // Initial call
 onHashChange();
+
+// # 3.3 Listen to screen changes
+const onScreenMatch = ({ matches }) =>
+  document.body.classList.toggle(
+    "lock",
+    document.location.hash === "#nav-open" && matches
+  );
+
+const mediaQueryList = window.matchMedia("(max-width: 48em)");
+
+mediaQueryList.addListener(onScreenMatch);
+
+// Initial call
+onScreenMatch({ matches: mediaQueryList.matches });

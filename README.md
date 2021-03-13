@@ -35,3 +35,6 @@ Walkthrough of creating a header component for JS Standup
 
 - escape key to close the navigation
 - a11y and UX `focus` enhancements (close/open)
+- scroll lock
+  - need to listen to screen size changes to remove lock (if nav stays open)
+  - mention some library usage, `overflow: hidden` is just for show

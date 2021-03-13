@@ -36,4 +36,8 @@ body {
   & > main {
     flex: 1;
   }
+
+  &.lock {
+    overflow: hidden;
+  }
 }
