@@ -8,6 +8,7 @@ const onHashChange = () => {
   const isOpen = document.location.hash === "#nav-open";
 
   document.body.classList.toggle("lock", isOpen); // added 3.3
+  document.querySelector(".overlay").classList.toggle("show", isOpen); // added 3.4
 
   isOpen
     ? document.querySelector('a[href="#_"]').focus()
@@ -31,3 +32,5 @@ mediaQueryList.addListener(onScreenMatch);
 
 // Initial call
 onScreenMatch({ matches: mediaQueryList.matches });
+
+// # TODO: focus traps/inert -> covered by Kiki

@@ -38,3 +38,7 @@ Walkthrough of creating a header component for JS Standup
 - scroll lock
   - need to listen to screen size changes to remove lock (if nav stays open)
   - mention some library usage, `overflow: hidden` is just for show
+- overlay
+  - explain html position
+  - on click, closes
+  - show styles
