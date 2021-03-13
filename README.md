@@ -34,3 +34,4 @@ Walkthrough of creating a header component for JS Standup
 3. The Javascript
 
 - escape key to close the navigation
+- a11y and UX `focus` enhancements (close/open)
