@@ -17,3 +17,10 @@ Walkthrough of creating a header component for JS Standup
 - PostCSS - mostly for nesting selectors
 - Vanilla js
 - [Parcel](https://parceljs.org/) as app bundler
+
+1. The Markup
+
+- show the markup
+- explain why the menu/close buttons are links and explain the `id`'s
+- explain `title` and `aria-label` on the links
+- explain the `_` on the close button link
