@@ -30,3 +30,7 @@ Walkthrough of creating a header component for JS Standup
 - basic colors and stuff
 - step by step coverage (header CSS)[./src/styles/index.css]
 - progressive enhancment: we got basic functionality with no js
+
+3. The Javascript
+
+- escape key to close the navigation
