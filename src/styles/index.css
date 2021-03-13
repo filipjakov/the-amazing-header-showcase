@@ -18,6 +18,10 @@ header {
   padding: 0 max(var(--layout-gutter), 50vw - 30ch);
 
   background-color: var(--color-background);
+  transition: background-color var(--animation-duration) ease;
+  &.is-pinned {
+    background-color: var(--color-primary);
+  }
 
   /* Overlay */
   & .overlay {

@@ -42,3 +42,6 @@ Walkthrough of creating a header component for JS Standup
   - explain html position
   - on click, closes
   - show styles
+- IO
+  - show styles (`top: -1px` trick)
+  - show js

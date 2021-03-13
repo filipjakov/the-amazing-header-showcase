@@ -33,4 +33,12 @@ mediaQueryList.addListener(onScreenMatch);
 // Initial call
 onScreenMatch({ matches: mediaQueryList.matches });
 
+// # 3.5 IO detects when element sticks
+const observer = new IntersectionObserver(
+  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+  { threshold: [1] }
+);
+
+observer.observe(document.querySelector("header"));
+
 // # TODO: focus traps/inert -> covered by Kiki
