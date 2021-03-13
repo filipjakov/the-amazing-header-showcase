@@ -1,4 +1,4 @@
-// Listen to hash changes
+// # Listen to hash changes
 const onHashChange = () => {
   const isOpen = document.location.hash === "#nav-open";
 
@@ -10,19 +10,17 @@ const onHashChange = () => {
     : document.querySelector('a[href="#nav-open"]').focus();
 };
 
-window.addEventListener("hashchange", onHashChange, {
-  passive: true,
-});
+window.addEventListener("hashchange", onHashChange);
 
-// Why calling it initally?
+// Explain the initial call
 onHashChange();
 
-// Listen to escape click
+// # Listen to escape click
 window.addEventListener("keyup", ({ code }) => {
   if (code === "Escape") document.location.hash = "";
 });
 
-// Listen to media changes
+// # Listen to screen changes changes
 const onScreenMatch = ({ matches }) =>
   document.body.classList.toggle(
     "lock",
@@ -33,16 +31,15 @@ const mediaQueryList = window.matchMedia("(max-width: 48em)");
 
 mediaQueryList.addListener(onScreenMatch);
 
-// Why calling it initally?
+// Explain the initial call
 onScreenMatch({ matches: mediaQueryList.matches });
 
-// IO detects when element sticks
-const header = document.querySelector("header");
+// # IO detects when element sticks
 const observer = new IntersectionObserver(
   ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
   { threshold: [1] }
 );
 
-observer.observe(header);
+observer.observe(document.querySelector("header"));
 
-// TODO: focus traps/inert -> covered by Kiki
+// # TODO: focus traps/inert -> covered by Kiki
