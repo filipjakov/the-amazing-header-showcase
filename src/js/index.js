@@ -20,7 +20,7 @@ window.addEventListener("keyup", ({ code }) => {
   if (code === "Escape") document.location.hash = "";
 });
 
-// # Listen to screen changes changes
+// # Listen to screen changes
 const onScreenMatch = ({ matches }) =>
   document.body.classList.toggle(
     "lock",
